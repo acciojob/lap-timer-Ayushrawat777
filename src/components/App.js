@@ -4,7 +4,6 @@ function App() {
   const [time, setTime] = useState(0);
   const [laps, setLaps] = useState([]);
   const intervalRef = useRef();
-
   const handleStart = () => {
     if (!intervalRef.current) {
       intervalRef.current = setInterval(() => {
